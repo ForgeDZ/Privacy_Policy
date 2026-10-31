@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="description" content="Privacy policy for Algo Execute, an offline Android programming application.">
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/algo-execute-icon-512.png">
+  <title>Algo Execute Privacy Policy | Forge DZ</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0D1117;
+      --surface: #161B22;
+      --surface-raised: #1C2128;
+      --ink: #F0F3F6;
+      --muted: #B1BAC4;
+      --line: #30363D;
+      --green: #3FB950;
+      --green-soft: rgba(63, 185, 80, .1);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { min-width: 320px; min-height: 100vh; margin: 0; color: var(--ink); background: radial-gradient(ellipse at 82% 0%, rgba(63, 185, 80, .07), transparent 34rem), var(--bg); font-size: 16px; line-height: 1.72; }
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:hover { color: #64D575; }
+    a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; border-radius: 3px; }
+    .shell { width: calc(100% - 48px); max-width: 1040px; margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 70px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: .92rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-mark { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(63, 185, 80, .55); border-radius: 10px; color: var(--green); background: var(--green-soft); font-size: .7rem; letter-spacing: -.04em; }
+    .back-link { color: var(--muted); font-size: .9rem; text-decoration: none; }
+    .back-link:hover { color: var(--green); }
+    main { width: calc(100% - 48px); max-width: 850px; margin-inline: auto; padding: 40px 0 78px; }
+    .hero { display: flex; align-items: center; gap: 19px; margin-bottom: 25px; }
+    .app-icon { display: block; flex: 0 0 68px; width: 68px; height: 68px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); object-fit: cover; }
+    .hero-copy { min-width: 0; }
+    .eyebrow { display: block; color: var(--green); font-size: .72rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 5px 0 3px; font-size: clamp(2rem, 5vw, 3.15rem); line-height: 1.12; letter-spacing: -.045em; }
+    .subtitle { margin: 0; color: var(--muted); font-size: .96rem; }
+    .last-updated { margin: 7px 0 0; color: var(--muted); font-size: .83rem; }
+    .summary { margin: 25px 0 22px; padding: 18px 21px; border: 1px solid rgba(63, 185, 80, .42); border-left: 4px solid var(--green); border-radius: 11px; background: var(--green-soft); }
+    .summary strong { display: block; margin-bottom: 4px; color: var(--green); font-size: 1.04rem; }
+    .summary p { margin: 0; color: var(--ink); }
+    .toc { margin: 0 0 20px; padding: 18px 21px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+    .toc h2 { margin: 0 0 10px; font-size: .98rem; }
+    .toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 25px; margin: 0; padding-left: 21px; color: var(--green); font-size: .87rem; }
+    .toc li { padding-left: 2px; }
+    .toc a { color: var(--muted); text-decoration: none; }
+    .toc a:hover { color: var(--green); text-decoration: underline; }
+    .policy { padding: 28px clamp(20px, 4.5vw, 42px); border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, rgba(28, 33, 40, .72), var(--surface)); }
+    .policy section + section { margin-top: 25px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .policy h2 { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.4; letter-spacing: -.01em; scroll-margin-top: 16px; }
+    .policy h3 { margin: 16px 0 6px; color: var(--ink); font-size: 1rem; line-height: 1.45; }
+    .policy p { margin: 7px 0 10px; color: var(--muted); }
+    .policy p:last-child { margin-bottom: 0; }
+    .policy ul { margin: 8px 0 12px; padding-left: 22px; color: var(--muted); }
+    .policy li { margin: 6px 0; padding-left: 2px; }
+    .policy strong { color: var(--ink); }
+    .contact { margin-top: 11px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-raised); }
+    .contact p { margin: 0; }
+    .contact a { font-weight: 650; overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .footer-inner { padding: 19px 0; }
+    .footer-inner p { margin: 0; }
+    @media (max-width: 640px) {
+      .shell { width: calc(100% - 32px); }
+      main { width: calc(100% - 32px); padding: 29px 0 62px; }
+      .topbar-inner { min-height: 64px; }
+      .hero { align-items: flex-start; gap: 14px; }
+      .app-icon { flex-basis: 58px; width: 58px; height: 58px; border-radius: 10px; }
+      .toc { padding: 16px 18px; }
+      .toc ol { grid-template-columns: 1fr; gap: 4px; }
+      .policy { padding: 23px 19px; }
+    }
+    @media (max-width: 380px) {
+      .brand { gap: 8px; font-size: .82rem; }
+      .back-link { font-size: .82rem; }
+      .hero { gap: 10px; }
+      .app-icon { flex-basis: 50px; width: 50px; height: 50px; }
+      h1 { font-size: 1.8rem; }
+      .policy { padding-inline: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">FDZ</span><span>Forge DZ</span></div>
+      <a class="back-link" href="../index.html">← Back to Privacy Policies</a>
+    </div>
+  </header>
+  <main>
+    <header class="hero">
+      <img class="app-icon" src="../assets/algo-execute-icon-512.png" width="68" height="68" alt="">
+      <div class="hero-copy">
+        <span class="eyebrow">Official application policy</span>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: November 1, 2026</p>
+        <p class="subtitle">Algo Execute · Forge DZ</p>
+      </div>
+    </header>
+
+    <aside class="summary" aria-label="Privacy summary">
+      <strong>Algo Execute does not collect or share user data.</strong>
+      <p>Information processed or saved by the application remains in local app storage.</p>
+    </aside>
+
+    <nav class="toc" aria-labelledby="contents-title">
+      <h2 id="contents-title">Contents</h2>
+      <ol>
+        <li><a href="#about-algo-execute">About Algo Execute</a></li>
+        <li><a href="#offline-operation">Offline Operation</a></li>
+        <li><a href="#data-collection">Data Collection and Sharing</a></li>
+        <li><a href="#local-information">Information Stored on the Device</a></li>
+        <li><a href="#program-execution">User Content and Program Execution</a></li>
+        <li><a href="#clipboard-keyboard">Clipboard and Keyboard</a></li>
+        <li><a href="#retention">Data Retention and Deletion</a></li>
+        <li><a href="#security-backups">Data Security and Device Backups</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Privacy Policy</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+      </ol>
+    </nav>
+
+    <article class="policy">
+      <section id="about-algo-execute">
+        <h2>1. About Algo Execute</h2>
+        <p>Algo Execute is an Android programming environment that combines a code editor, an interpreter for the app's programming language, and a built-in language reference. It provides the tools needed to write, edit, and execute programs.</p>
+        <p><strong>Developer:</strong> Forge DZ</p>
+      </section>
+
+      <section id="offline-operation">
+        <h2>2. Offline Operation</h2>
+        <p>Algo Execute operates entirely on the device. Programs can be written, edited, and executed without an internet connection. The application does not rely on cloud services or remote processing.</p>
+      </section>
+
+      <section id="data-collection">
+        <h2>3. Data Collection and Sharing</h2>
+        <p><strong>Algo Execute does not collect, transmit, or share user data.</strong> It does not send user-created programs, typed input, execution results, saved programs, editor sessions, or other content to Forge DZ or an external service. The application does not have accounts, registration, or login.</p>
+        <p>Information saved locally remains on the device; it is not collected for external use or shared with third parties.</p>
+        <p>The application does not use tracking, analytics, telemetry, or crash reporting, and it has no online AI features.</p>
+      </section>
+
+      <section id="local-information">
+        <h2>4. Information Stored on the Device</h2>
+        <p>The application stores the following information locally so its features can work:</p>
+        <ul>
+          <li><strong>Saved programs and collections:</strong> Program source code, program and collection names, collection details, and modification times are kept in the app's private storage until deleted by the user.</li>
+          <li><strong>Editor session:</strong> The application saves the current editor session, including source code that has not been saved as a program, along with relevant editor state. This session can be restored after the app restarts.</li>
+          <li><strong>Appearance preferences:</strong> The selected theme and editor font size are saved on the device.</li>
+          <li><strong>Sequential Files:</strong> Files created through the app's file-handling features are stored in the app's private storage and remain there until deleted using the <code>Delete</code> operation in the app's language.</li>
+          <li><strong>Console:</strong> Console input and execution output are processed locally. The console does not save a persistent transcript or runtime input history.</li>
+        </ul>
+      </section>
+
+      <section id="program-execution">
+        <h2>5. User Content and Program Execution</h2>
+        <p>The interpreter processes programs locally on the device. Program execution does not use an online compiler or remote service.</p>
+      </section>
+
+      <section id="clipboard-keyboard">
+        <h2>6. Clipboard and Keyboard</h2>
+        <h3>Clipboard and Copy AI Prompt</h3>
+        <p>In the Syntax Reference, “Copy AI Prompt” copies static language-reference text to the Android clipboard. It does not contact an AI service or automatically copy source code from the editor.</p>
+        <p>Users can also initiate standard Android copy, cut, and paste actions in the editor. Text pasted into another application is handled according to that application's own practices.</p>
+        <h3>Android Keyboard and Text Input</h3>
+        <p>Text entry uses the keyboard selected on Android. Algo Execute does not control the keyboard provider. Any independent handling of typed text by a third-party keyboard is governed by that provider's practices.</p>
+      </section>
+
+      <section id="retention">
+        <h2>7. Data Retention and Deletion</h2>
+        <ul>
+          <li>Users can delete saved programs and collections through the app's collection management interface.</li>
+          <li>Sequential files can be deleted with the <code>Delete</code> operation in the app's language.</li>
+          <li>The editor's Reset function replaces the current editor session with the starter program. It does not erase all app information.</li>
+          <li>Users can remove locally stored app data by clearing Algo Execute's storage in Android system settings.</li>
+          <li>Uninstalling the application normally removes its private data, subject to Android and device-manufacturer behavior.</li>
+        </ul>
+        <p>The application creates no user accounts and has no account-deletion feature or in-app erase-all-data function.</p>
+      </section>
+
+      <section id="security-backups">
+        <h2>8. Data Security and Device Backups</h2>
+        <h3>Local Data Storage and Security</h3>
+        <p>Saved programs, files, and application settings are stored in the app's private storage on the user's device. The app does not apply additional encryption to this locally stored information.</p>
+        <h3>Android Backups and Device Transfers</h3>
+        <p>Standard Android app backup is disabled for Algo Execute. However, some device manufacturers may support transferring application data directly between devices. This behavior depends on the device and its system configuration.</p>
+      </section>
+
+      <section id="children">
+        <h2>9. Children's Privacy</h2>
+        <p>Algo Execute is a programming application intended for users of all ages, including children. Its built-in content focuses on programming and learning, providing tools for code editing, program execution, and reference materials for the app's language.</p>
+        <p>The application's built-in content contains no advertisements, violent content, or sexually explicit material. It is not designed to be age-inappropriate.</p>
+        <p>Users can create and execute their own programs. The content and behavior of user-created programs depend on the code entered by their creators.</p>
+      </section>
+
+      <section id="changes">
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>Forge DZ will update this policy if the application's features or privacy practices change. The latest revision date appears below the Privacy Policy heading.</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact Information</h2>
+        <p>For questions about this policy or Algo Execute's privacy practices, contact Forge DZ:</p>
+        <div class="contact"><p><strong>Forge DZ</strong><br><a href="mailto:forgedz.contact@gmail.com">forgedz.contact@gmail.com</a></p></div>
+      </section>
+    </article>
+  </main>
+
+  <footer><div class="shell footer-inner"><p>© Forge DZ</p></div></footer>
+</body>
+</html>

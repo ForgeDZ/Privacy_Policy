@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="description" content="Privacy policies for applications developed by Forge DZ.">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/algo-execute-icon-512.png">
+  <title>Privacy Policies | Forge DZ</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0D1117;
+      --surface: #161B22;
+      --surface-hover: #1C232B;
+      --ink: #F0F3F6;
+      --muted: #B1BAC4;
+      --line: #30363D;
+      --green: #3FB950;
+      --green-soft: rgba(63, 185, 80, .1);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(ellipse at 82% 0%, rgba(63, 185, 80, .07), transparent 34rem), var(--bg);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+    .shell { width: calc(100% - 48px); max-width: 1040px; margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .topbar-inner { display: flex; align-items: center; min-height: 74px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-size: .94rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-mark { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(63, 185, 80, .55); border-radius: 10px; color: var(--green); background: var(--green-soft); font-size: .72rem; letter-spacing: -.04em; }
+    main { flex: 1; padding: 76px 0 92px; }
+    .intro { max-width: 690px; margin-bottom: 44px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--green); font-size: .74rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+    .eyebrow::before { width: 22px; height: 1px; background: currentColor; content: ""; }
+    h1 { margin: 15px 0 12px; font-size: clamp(2.5rem, 6vw, 4.25rem); line-height: 1.08; letter-spacing: -.05em; }
+    .intro p { margin: 0; color: var(--muted); font-size: 1.08rem; }
+    .section-heading { margin: 0 0 15px; font-size: 1.05rem; font-weight: 700; }
+    .app-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 23px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      color: var(--ink);
+      background: var(--surface);
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color .16s ease, background-color .16s ease;
+    }
+    .app-card:hover { border-color: rgba(63, 185, 80, .6); background: var(--surface-hover); }
+    .app-card:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+    .app-info { display: flex; align-items: center; gap: 19px; min-width: 0; }
+    .app-icon { display: block; flex: 0 0 76px; width: 76px; height: 76px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); object-fit: cover; }
+    .app-copy { min-width: 0; }
+    .app-title { display: block; margin: 0 0 4px; font-size: 1.1rem; line-height: 1.35; }
+    .app-description { display: block; margin: 0; color: var(--muted); font-size: .94rem; }
+    .card-hint { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 8px; color: var(--green); font-size: .9rem; font-weight: 650; }
+    .card-arrow { font-size: 1.12rem; line-height: 1; transition: transform .16s ease; }
+    .app-card:hover .card-arrow { transform: translateX(3px); }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .footer-inner { padding: 20px 0; }
+    .footer-inner p { margin: 0; }
+    @media (max-width: 620px) {
+      .shell { width: calc(100% - 32px); }
+      .topbar-inner { min-height: 66px; }
+      main { padding: 58px 0 70px; }
+      .intro { margin-bottom: 36px; }
+      .app-card { align-items: flex-start; gap: 18px; padding: 18px; }
+      .app-info { align-items: flex-start; gap: 13px; }
+      .app-icon { flex-basis: 64px; width: 64px; height: 64px; }
+      .card-hint { gap: 0; font-size: 1.15rem; }
+      .card-hint-text { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    }
+    @media (max-width: 420px) {
+      .app-card { gap: 10px; padding: 15px; }
+      .app-info { gap: 10px; }
+      .app-icon { flex-basis: 56px; width: 56px; height: 56px; }
+      .app-description { font-size: .88rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">FDZ</span><span>Forge DZ</span></div>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <span class="eyebrow">Forge DZ</span>
+      <h1 id="page-title">Privacy Policies</h1>
+      <p>Policies for applications developed by Forge DZ.</p>
+    </section>
+    <section aria-labelledby="applications-title">
+      <h2 class="section-heading" id="applications-title">Applications</h2>
+      <a class="app-card" href="Algo_Execute/index.html" aria-labelledby="algo-title card-hint-label" aria-describedby="algo-description">
+        <div class="app-info">
+          <img class="app-icon" src="assets/algo-execute-icon-512.png" width="76" height="76" alt="">
+          <div class="app-copy">
+            <h2 class="app-title" id="algo-title">Algo Execute</h2>
+            <p class="app-description" id="algo-description">An offline programming environment for Android.</p>
+          </div>
+        </div>
+        <span class="card-hint"><span class="card-hint-text" id="card-hint-label">View policy</span><span class="card-arrow" aria-hidden="true">→</span></span>
+      </a>
+    </section>
+  </main>
+  <footer><div class="shell footer-inner"><p>© Forge DZ</p></div></footer>
+</body>
+</html>
