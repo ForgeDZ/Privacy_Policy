@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="description" content="Privacy policy for MultiLink Extractor, a browser extension that turns file-hosting page links into direct download URLs.">
+  <link rel="icon" type="image/png" sizes="128x128" href="../assets/multilink-extractor-icon-128.png?v=20261123">
+  <title>MultiLink Extractor Privacy Policy | Forge DZ</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0D1117;
+      --surface: #161B22;
+      --surface-raised: #1C2128;
+      --ink: #F0F3F6;
+      --muted: #B1BAC4;
+      --line: #30363D;
+      --green: #3FB950;
+      --green-soft: rgba(63, 185, 80, .1);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { min-width: 320px; min-height: 100vh; margin: 0; color: var(--ink); background: radial-gradient(ellipse at 82% 0%, rgba(63, 185, 80, .07), transparent 34rem), var(--bg); font-size: 16px; line-height: 1.72; }
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:hover { color: #64D575; }
+    a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; border-radius: 3px; }
+    .shell { width: calc(100% - 48px); max-width: 1040px; margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 70px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: .92rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-mark { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(63, 185, 80, .55); border-radius: 10px; color: var(--green); background: var(--green-soft); font-size: .7rem; letter-spacing: -.04em; }
+    .back-link { color: var(--muted); font-size: .9rem; text-decoration: none; }
+    .back-link:hover { color: var(--green); }
+    main { width: calc(100% - 48px); max-width: 850px; margin-inline: auto; padding: 40px 0 78px; }
+    .hero { display: flex; align-items: center; gap: 19px; margin-bottom: 25px; }
+    .app-icon { display: block; flex: 0 0 68px; width: 68px; height: 68px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); object-fit: cover; }
+    .hero-copy { min-width: 0; }
+    .eyebrow { display: block; color: var(--green); font-size: .72rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 5px 0 3px; font-size: clamp(2rem, 5vw, 3.15rem); line-height: 1.12; letter-spacing: -.045em; }
+    .subtitle { margin: 0; color: var(--muted); font-size: .96rem; }
+    .last-updated { margin: 7px 0 0; color: var(--muted); font-size: .83rem; }
+    .summary { margin: 25px 0 22px; padding: 18px 21px; border: 1px solid rgba(63, 185, 80, .42); border-left: 4px solid var(--green); border-radius: 11px; background: var(--green-soft); }
+    .summary strong { display: block; margin-bottom: 4px; color: var(--green); font-size: 1.04rem; }
+    .summary p { margin: 0; color: var(--ink); }
+    .toc { margin: 0 0 20px; padding: 18px 21px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+    .toc h2 { margin: 0 0 10px; font-size: .98rem; }
+    .toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 25px; margin: 0; padding-left: 21px; color: var(--green); font-size: .87rem; }
+    .toc li { padding-left: 2px; }
+    .toc a { color: var(--muted); text-decoration: none; }
+    .toc a:hover { color: var(--green); text-decoration: underline; }
+    .policy { padding: 28px clamp(20px, 4.5vw, 42px); border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, rgba(28, 33, 40, .72), var(--surface)); }
+    .policy section + section { margin-top: 25px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .policy h2 { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.4; letter-spacing: -.01em; scroll-margin-top: 16px; }
+    .policy h3 { margin: 16px 0 6px; color: var(--ink); font-size: 1rem; line-height: 1.45; }
+    .policy p { margin: 7px 0 10px; color: var(--muted); }
+    .policy p:last-child { margin-bottom: 0; }
+    .policy ul { margin: 8px 0 12px; padding-left: 22px; color: var(--muted); }
+    .policy li { margin: 6px 0; padding-left: 2px; }
+    .policy strong { color: var(--ink); }
+    .policy code { padding: 1px 5px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); background: var(--surface-raised); font-size: .9em; }
+    .contact { margin-top: 11px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-raised); }
+    .contact p { margin: 0; }
+    .contact a { font-weight: 650; overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .footer-inner { padding: 19px 0; }
+    .footer-inner p { margin: 0; }
+    @media (max-width: 640px) {
+      .shell { width: calc(100% - 32px); }
+      main { width: calc(100% - 32px); padding: 29px 0 62px; }
+      .topbar-inner { min-height: 64px; }
+      .hero { align-items: flex-start; gap: 14px; }
+      .app-icon { flex-basis: 58px; width: 58px; height: 58px; border-radius: 10px; }
+      .toc { padding: 16px 18px; }
+      .toc ol { grid-template-columns: 1fr; gap: 4px; }
+      .policy { padding: 23px 19px; }
+    }
+    @media (max-width: 380px) {
+      .brand { gap: 8px; font-size: .82rem; }
+      .back-link { font-size: .82rem; }
+      .hero { gap: 10px; }
+      .app-icon { flex-basis: 50px; width: 50px; height: 50px; }
+      h1 { font-size: 1.8rem; }
+      .policy { padding-inline: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">FDZ</span><span>Forge DZ</span></div>
+      <a class="back-link" href="../index.html">← Back to Privacy Policies</a>
+    </div>
+  </header>
+  <main>
+    <header class="hero">
+      <img class="app-icon" src="../assets/multilink-extractor-icon-128.png?v=20261123" width="68" height="68" alt="">
+      <div class="hero-copy">
+        <span class="eyebrow">Official application policy</span>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: November 23, 2026</p>
+        <p class="subtitle">MultiLink Extractor · Forge DZ</p>
+      </div>
+    </header>
+
+    <aside class="summary" aria-label="Privacy summary">
+      <strong>MultiLink Extractor does not collect or share user data.</strong>
+      <p>The links you select, the results and the settings stay in your own browser.</p>
+    </aside>
+
+    <nav class="toc" aria-labelledby="contents-title">
+      <h2 id="contents-title">Contents</h2>
+      <ol>
+        <li><a href="#about-multilink-extractor">About MultiLink Extractor</a></li>
+        <li><a href="#data-collection">Data Collection and Sharing</a></li>
+        <li><a href="#local-information">Information Stored in the Browser</a></li>
+        <li><a href="#page-content">Page Content and Selected Links</a></li>
+        <li><a href="#cookies-requests">Cookies and File-Host Requests</a></li>
+        <li><a href="#clipboard">Clipboard</a></li>
+        <li><a href="#permissions">Permissions Used</a></li>
+        <li><a href="#retention">Data Retention and Deletion</a></li>
+        <li><a href="#incognito">Incognito Windows</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Privacy Policy</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+      </ol>
+    </nav>
+
+    <article class="policy">
+      <section id="about-multilink-extractor">
+        <h2>1. About MultiLink Extractor</h2>
+        <p>MultiLink Extractor is a browser extension for Chromium-based browsers and Firefox. It collects the hyperlinks inside a text selection on a web page and turns file-hosting page links for <code>fuckingfast.co</code>, <code>datanodes.to</code> and <code>filekeeper.net</code> into the direct download URLs behind them.</p>
+        <p><strong>Developer:</strong> Forge DZ</p>
+      </section>
+
+      <section id="data-collection">
+        <h2>2. Data Collection and Sharing</h2>
+        <p><strong>MultiLink Extractor does not collect, transmit, or share user data.</strong> Forge DZ operates no server for this extension and receives no information from it.</p>
+        <ul>
+          <li>No accounts, registration, or login.</li>
+          <li>No analytics, telemetry, tracking, advertising, or crash reporting.</li>
+          <li>No selling, renting, or sharing of user data with third parties.</li>
+          <li>No collection of browsing history, and no synchronization of any data to a Forge DZ service.</li>
+          <li>No remote code: every script the extension runs is contained in its own package.</li>
+        </ul>
+      </section>
+
+      <section id="local-information">
+        <h2>3. Information Stored in the Browser</h2>
+        <p>The extension uses the browser's local extension storage so its own page keeps working between visits:</p>
+        <ul>
+          <li><strong>Link list:</strong> the URLs in the extension's input box, saved as you type.</li>
+          <li><strong>Results:</strong> the rows produced by the last extraction run — original URL, status, host, file name, file size and the direct URL — so they are still there if the page is reopened.</li>
+          <li><strong>Settings:</strong> the theme, the automatic start for direct links, and the request details the extraction engine uses for the three supported hosts.</li>
+          <li><strong>Hand-off marker:</strong> a short-lived flag that lets the extractor page continue a run that was started from the toolbar popup.</li>
+        </ul>
+        <p>All of this stays inside your browser profile. It is never uploaded to Forge DZ. It is not encrypted beyond the browser's own protection of its profile directory.</p>
+      </section>
+
+      <section id="page-content">
+        <h2>4. Page Content and Selected Links</h2>
+        <p>Reading a page happens only when you ask for it. When you right-click inside a selection and choose <strong>Copy All Links</strong> or <strong>Send to MultiLink Extractor</strong>, the extension reads the links inside that selection on that page and nothing more. With <strong>Copy All Links</strong> the text goes straight to your clipboard. With <strong>Send to MultiLink Extractor</strong> the links are passed internally to the extension's own page.</p>
+        <p>On <code>fuckingfast.co</code>, <code>datanodes.to</code> and <code>filekeeper.net</code> only, a content script also reads the file page — its download form, file name, file size, and any Cloudflare Turnstile challenge state — so the extension can follow the site's own download flow. It is not injected into any other website.</p>
+        <p>The pages you visit, the text you select and the results are not sent to Forge DZ or to any advertising or analytics provider.</p>
+      </section>
+
+      <section id="cookies-requests">
+        <h2>5. Cookies and File-Host Requests</h2>
+        <p>To fetch a direct download link, the extension sends requests to the same host that hosts the file. Those requests are made on your behalf, as your session:</p>
+        <ul>
+          <li>The extension reads the cookies that already exist for the exact file-host URL involved, and sends them back only to that same host.</li>
+          <li>Cookies are never sent to Forge DZ, and no cookie is read for any other website.</li>
+          <li>For <code>filekeeper.net</code>, the extension reads the redirect target of its own request instead of following it, which is what the <code>webRequest</code> permission is used for.</li>
+        </ul>
+        <p>Requests go to <code>fuckingfast.co</code>, <code>datanodes.to</code> and <code>filekeeper.net</code> — no other host is contacted. Those websites operate independently of Forge DZ, and their own privacy practices, logging and terms apply to your use of them. Links for any other site are reported as <strong>Unsupported</strong> and are not requested.</p>
+        <p>If a host presents a Cloudflare Turnstile check, the page is left open for you to complete by hand. The challenge is served and verified by that website and Cloudflare, not by the extension.</p>
+      </section>
+
+      <section id="clipboard">
+        <h2>6. Clipboard</h2>
+        <p>The extension writes to the clipboard only when you ask it to — through <strong>Copy All Links</strong>, the copy button next to a result, or copying the result list. It does not read clipboard contents and does not copy anything on its own.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>7. Permissions Used</h2>
+        <ul>
+          <li><strong>contextMenus:</strong> adds the two right-click commands.</li>
+          <li><strong>activeTab</strong> and <strong>scripting:</strong> read the selection on the current page only after you choose one of those commands.</li>
+          <li><strong>clipboardWrite:</strong> copies links or results when you ask.</li>
+          <li><strong>storage:</strong> keeps the input, results and settings in your browser.</li>
+          <li><strong>cookies:</strong> sends a file host its own cookies with the extension's request to it.</li>
+          <li><strong>tabs:</strong> opens, finds and closes the extension's own extractor page.</li>
+          <li><strong>webRequest:</strong> reads the redirect target for <code>filekeeper.net</code>.</li>
+          <li><strong>Host access</strong> to <code>fuckingfast.co</code>, <code>datanodes.to</code> and <code>filekeeper.net</code>: the only websites the extension contacts.</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <h2>8. Data Retention and Deletion</h2>
+        <p>Because nothing is sent to a server, there is no remote copy to delete.</p>
+        <ul>
+          <li><strong>Results</strong> can be cleared from the extension's page with its clear control.</li>
+          <li><strong>The link list</strong> can be emptied by clearing the input box.</li>
+          <li><strong>All extension data</strong> — input, results and settings — is removed by uninstalling the extension, or by clearing its site/extension data in the browser's settings.</li>
+        </ul>
+      </section>
+
+      <section id="incognito">
+        <h2>9. Incognito Windows</h2>
+        <p>If you allow the extension in private or incognito windows, it can be used there too. Its stored input, results and settings are shared with the extension's normal profile storage; pages you visit while using it are still not reported to Forge DZ.</p>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+        <p>MultiLink Extractor is a general-purpose utility for collecting links and is not directed at children. It collects no personal information from any user, including children.</p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>Forge DZ will update this policy if the extension's features or privacy practices change. The latest revision date appears below the Privacy Policy heading.</p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact Information</h2>
+        <p>For questions about this policy or MultiLink Extractor's privacy practices, contact Forge DZ:</p>
+        <div class="contact"><p><strong>Forge DZ</strong><br><a href="mailto:forgedz.contact@gmail.com">forgedz.contact@gmail.com</a></p></div>
+      </section>
+    </article>
+  </main>
+  <footer><div class="shell footer-inner"><p>© Forge DZ</p></div></footer>
+</body>
+</html>

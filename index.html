@@ -62,6 +62,7 @@
     }
     .app-card:hover { border-color: rgba(63, 185, 80, .6); background: var(--surface-hover); }
     .app-card:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+    .app-card + .app-card { margin-top: 14px; }
     .app-info { display: flex; align-items: center; gap: 19px; min-width: 0; }
     .app-icon { display: block; flex: 0 0 76px; width: 76px; height: 76px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); object-fit: cover; }
     .app-copy { min-width: 0; }
@@ -116,6 +117,16 @@
           </div>
         </div>
         <span class="card-hint"><span class="card-hint-text" id="card-hint-label">View policy</span><span class="card-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="app-card" href="MultiLink_Extractor/index.html" aria-labelledby="multilink-title multilink-card-hint-label" aria-describedby="multilink-description">
+        <div class="app-info">
+          <img class="app-icon" src="assets/multilink-extractor-icon-128.png?v=20261123" width="76" height="76" alt="">
+          <div class="app-copy">
+            <h2 class="app-title" id="multilink-title">MultiLink Extractor</h2>
+            <p class="app-description" id="multilink-description">A browser extension that turns file-hosting page links into direct download URLs.</p>
+          </div>
+        </div>
+        <span class="card-hint"><span class="card-hint-text" id="multilink-card-hint-label">View policy</span><span class="card-arrow" aria-hidden="true">→</span></span>
       </a>
     </section>
   </main>
